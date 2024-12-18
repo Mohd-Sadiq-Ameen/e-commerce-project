@@ -1,0 +1,11 @@
+ /* PATH -> components/Carousel.css  */
+
+.swiper-pagination-bullet {
+    background: white ;  /* White bullets */
+    opacity: 0.8; /* Slight transparency */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: rgb(50, 116, 222) ; /* Active bullet is red */
+    opacity: 1; /* Fully visible */
+  }
