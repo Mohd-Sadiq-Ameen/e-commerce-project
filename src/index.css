@@ -1,15 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Add this to your CSS file */
-.swiper-pagination-bullet {
-    background: white; /* Changes the bullet color to white */
-    opacity: 0.8; /* Optional: Makes them slightly transparent */
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: red; /* Active bullet will have a red color */
-    opacity: 1; /* Fully visible */
-  }
-  

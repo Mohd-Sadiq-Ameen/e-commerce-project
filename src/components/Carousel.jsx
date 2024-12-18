@@ -11,7 +11,7 @@ import {
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import './Carousel.css';
+import "./Carousel.css";
 
 export default function Carousel() {
   return (
@@ -24,7 +24,7 @@ export default function Carousel() {
         navigation={true}
         modules={[Navigation, Pagination, Autoplay, A11y]} // Correct A11y
         autoplay={{
-          delay: 3000,
+          delay: 5000,
         }}
         pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
@@ -36,6 +36,11 @@ export default function Carousel() {
           lastSlideMessage: "This is the last slide",
         }}
       >
+        <SwiperSlide className="bg-black">
+          <video controls  autoPlay loop muted="mutes" className="h-[300px]" >
+            <source src={"../images/carousel_vid.mp4"} type="video/mp4" />
+          </video>
+        </SwiperSlide>
         <SwiperSlide>
           <img src={"../images/carousel_1.jpg"} alt="Img" />
         </SwiperSlide>
@@ -48,7 +53,6 @@ export default function Carousel() {
         <SwiperSlide>
           <img src={"../images/carousel_4.jpg"} alt="Img" />
         </SwiperSlide>
-        
       </Swiper>
     </div>
   );
