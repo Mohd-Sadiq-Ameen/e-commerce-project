@@ -15,9 +15,9 @@ import "./Carousel.css";
 
 export default function Carousel() {
   return (
-    <div className="h-600px pt-2 ">
+    <div className="h-[400px] pt-2 bg-black">
       <Swiper
-        className="h-50% justify-center items-center"
+        className="max-h-[100%] justify-center items-center "
         loop={true}
         spaceBetween={0}
         slidesPerView={1}
@@ -36,15 +36,15 @@ export default function Carousel() {
           lastSlideMessage: "This is the last slide",
         }}
       >
-        <SwiperSlide className="bg-black">
-          <video controls  autoPlay loop muted="mutes" className="h-[300px]" >
+        <SwiperSlide className="max-h-[200px] bg-black">
+          <video controls  autoPlay loop muted="mutes" className="h-[350px]" >
             <source src={"../images/carousel_vid.mp4"} type="video/mp4" />
           </video>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="max-h-[200px] bg-black">
           <img src={"../images/carousel_1.jpg"} alt="Img" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="max-h-[200px] bg-black">
           <img src={"../images/carousel_2.jpg"} alt="Img" />
         </SwiperSlide>
         <SwiperSlide>
