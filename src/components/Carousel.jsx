@@ -15,7 +15,7 @@ import "./Carousel.css";
 
 export default function Carousel() {
   return (
-    <div className="h-[400px] pt-2 bg-black">
+    <div className="max-h-[220px] h-[300px] pt-2 bg-black">
       <Swiper
         className="max-h-[100%] justify-center items-center "
         loop={true}
@@ -36,24 +36,26 @@ export default function Carousel() {
           lastSlideMessage: "This is the last slide",
         }}
       >
-        <SwiperSlide className="max-h-[200px] bg-black">
-          <video controls  autoPlay loop muted="mutes" className="h-[350px]" >
+        <SwiperSlide className="max-h-[100px] bg-black justify-center items-center">
+          <video controls  autoPlay loop muted="mutes" className="h-[200px] w-[800px] m-auto" >
             <source src={"../images/carousel_vid.mp4"} type="video/mp4" />
           </video>
         </SwiperSlide>
-        <SwiperSlide className="max-h-[200px] bg-black">
-          <img src={"../images/carousel_1.jpg"} alt="Img" />
+        <SwiperSlide className="bg-black justify-center items-center">
+          <img src={"../images/carousel_1.jpg"} alt="Img" className="h-[380px] w-[1000px]"  />
         </SwiperSlide>
-        <SwiperSlide className="max-h-[200px] bg-black">
-          <img src={"../images/carousel_2.jpg"} alt="Img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={"../images/carousel_3.jpg"} alt="Img" />
+        <SwiperSlide className="h-[100px] w-[200px] bg-black">
+          <img src={"../images/carousel_2.jpg"} alt="Img" className="h-[350px] w-[1000px]" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"../images/carousel_4.jpg"} alt="Img" />
+          <img src={"../images/carousel_3.jpg"} alt="Img" className="h-[350px] w-[1000px]"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={"../images/carousel_4.jpg"} alt="Img" className="h-[350px] w-[1000px]" />
         </SwiperSlide>
       </Swiper>
+
+      <div className="h-400px bg-orange-500"></div>
     </div>
   );
 }
